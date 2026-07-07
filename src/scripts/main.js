@@ -3,11 +3,14 @@
 const wall = document.querySelector('.wall');
 const spider = document.querySelector('.spider');
 
-const wallWH = wall.clientWidth;
+const wallWidth = wall.clientWidth;
+const wallHeight = wall.clientHeight;
 
-const spiderWH = spider.offsetWidth;
+const spiderWidth = spider.offsetWidth;
+const spiderHeight = spider.offsetHeight;
 
-const centered = (wallWH - spiderWH) / 2;
+const centeredWidth = (wallWidth - spiderWidth) / 2;
+const centeredHeight = (wallHeight - spiderHeight) / 2;
 
-spider.style.left = `${centered}px`;
-spider.style.top = `${centered}px`;
+spider.style.left = `${centeredWidth}px`;
+spider.style.top = `${centeredHeight}px`;
